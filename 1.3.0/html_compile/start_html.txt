@@ -1,0 +1,16 @@
+<!--ExpandScript ${VERSION}$-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ExpandScript</title>
+	<style type="text/css">
+		${CSS}$
+	</style>
+</head>
+<body>
+	${HTML}$
+	<script type="text/javascript">
+		${JS}$
+	</script>
+</body>
+</html>

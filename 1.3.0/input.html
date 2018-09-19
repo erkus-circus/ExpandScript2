@@ -1,0 +1,43 @@
+<!--Eric Diskin | 2018 | Lerk | V1.2.0-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lerk IMAGE</title>
+	<script type="text/javascript" src="scripts/compile.js"></script>
+	<style type="text/css">
+		html {
+			background-color: black;
+		}
+		canvas {
+			display: block;
+			margin: auto;
+			border: 1px solid black;
+			background-color: white;
+		}
+		h1 {
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="mouse-pos"></h1>
+	<h1 id="download">to download image, right click and select download.</h1>
+	<h5></h5>
+	<canvas id="canv">Please upgrade your browser to view image.</canvas>
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById('canv'),
+			c = canvas.getContext('2d');
+			function mPos(e) { // find mouse position on "canvas"
+				var rt = canvas.getBoundingClientRect();
+				return {
+					x: e.clientX  - rt.left,
+					y: e.clientY - rt.top
+				};
+			}
+			window.onmousemove = function(e){
+				var pos = mPos(e);
+				document.getElementById('mouse-pos').innerHTML = 'X:' + pos.x +
+				', Y: ' + pos.y;
+			};

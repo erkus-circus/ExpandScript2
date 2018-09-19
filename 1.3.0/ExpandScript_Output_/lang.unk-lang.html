@@ -1,0 +1,57 @@
+<!--ExpandScript 0.3.5--->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ExpandScript</title>
+	<style type="text/css">
+		
+		
+	</style>
+</head>
+<body>
+	
+	<h1 id="mouse-pos"></h1>
+	<canvas id="canv">Upgrade your browser to view</canvas>
+		
+	<script type="text/javascript">
+		
+		var canvas, c, width, height;
+		canvas = document.getElementById('canv'),
+		c = canvas.getContext('2d');
+		function mPos(e) { // find mouse position on "canvas"
+			var rt = canvas.getBoundingClientRect();
+			return {
+				x: e.clientX  - rt.left,
+				y: e.clientY - rt.top
+			};
+		}
+		window.onmousemove = function(e){
+			var pos = mPos(e);
+			document.getElementById('mouse-pos').innerHTML = 'X:' + pos.x +
+			', Y: ' + pos.y;
+		};
+		
+		height = 1000;
+		canvas.width = 1000;
+		width = 1000;
+		canvas.height = 1000;
+		c.strokeStyle = 'rgb( 255 , 224 , 189 )';
+		c.fillStyle = 'rgb( 255 , 224 , 189 )';
+		c.beginPath();
+		c.lineWidth = 10;
+		c.moveTo( 500 , 450 );
+		c.lineTo( 120 , 400 );
+		c.fill();
+		c.stroke();
+		c.closePath();
+		c.beginPath();
+		c.strokeStyle = 'rgb( 255 , 224 , 189 )';
+		c.fillStyle = 'rgb( 255 , 224 , 189 )';
+		c.arc(500,500,50,0,Math.PI*2);
+		c.arc(500,400,50,0,Math.PI*2);
+		c.fill();
+		c.stroke();
+		c.closePath();
+	</script>
+</body>
+</html>

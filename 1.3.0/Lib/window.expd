@@ -1,0 +1,11 @@
+::
+:> JS Window Module 
+:> Version 1.0
+:> Eric Diskin
+:> 2018
+::
+
+$alert[$msg] {
+	^ runs JS alert()
+	rawjs('alert("$msg");')
+}

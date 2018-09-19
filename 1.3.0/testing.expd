@@ -1,0 +1,4 @@
+#inc <canvas>
+#inc <window>
+
+str $hi = 'HI'

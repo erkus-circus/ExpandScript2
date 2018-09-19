@@ -1,0 +1,515 @@
+reading line 1: ::
+
+skipping comment
+
+reading line 2: :> canvas module
+
+reading line 3: :> Eric Diskin
+
+reading line 4: :> 2018
+
+reading line 5: :> 2.1
+
+reading line 6: ::
+
+skipping comment
+
+reading line 7: 
+
+reading line 8: log('HTML5 canvas module')
+
+function name: log
+
+stripping args
+
+args stripped
+
+adding console statement
+
+reading line 9: log('Version: 1.0.0')
+
+function name: log
+
+stripping args
+
+args stripped
+
+adding console statement
+
+reading line 10: log('Eric Diskin')
+
+function name: log
+
+stripping args
+
+args stripped
+
+adding console statement
+
+reading line 11: log(2018)
+
+function name: log
+
+stripping args
+
+args stripped
+
+adding console statement
+
+reading line 12: 
+
+reading line 13: rawcss('body {background-color: black;}canvas {	display: block;	margin: auto;	border: 1px solid black;	background-color: white;}')r
+
+function name: rawcss
+
+stripping args
+
+args stripped
+
+adding raw css
+
+reading line 14: rawhtml('<canvas id="canv"></canvas>')
+
+function name: rawhtml
+
+stripping args
+
+args stripped
+
+adding raw html to body
+
+reading line 15: rawjs('var canvas = document.getElementById("canv"), c = canvas.getContext("2d");')
+
+function name: rawjs
+
+stripping args
+
+args stripped
+
+adding raw js
+
+reading line 16: 
+
+reading line 17: 
+
+reading line 18: $move[$X,$Y] {
+
+Creating function
+
+		var lini is now 19
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 20
+
+function created
+
+reading line 22: 
+
+reading line 23: $line[$x,$y] {
+
+Creating function
+
+		var lini is now 24
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 25
+
+function created
+
+reading line 27: 
+
+reading line 28: $box[$x1,$y1,$x2,$y2] {
+
+Creating function
+
+		var lini is now 29
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 30
+
+function created
+
+reading line 32: 
+
+reading line 33: $width[$num] {
+
+Creating function
+
+		var lini is now 34
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 35
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 36
+
+function created
+
+reading line 38: 
+
+reading line 39: $height[$num] {
+
+Creating function
+
+		var lini is now 40
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 41
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 42
+
+function created
+
+reading line 44: 
+
+reading line 45: $stroke[$HI] {
+
+Creating function
+
+		var lini is now 46
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 47
+
+function created
+
+reading line 49: 
+
+reading line 50: $fill[] {
+
+Creating function
+
+		var lini is now 51
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 52
+
+function created
+
+reading line 54: 
+
+reading line 55: $draw[] {
+
+Creating function
+
+		var lini is now 56
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 57
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 58
+
+function created
+
+reading line 60: 
+
+reading line 61: $trans[$parency] {
+
+Creating function
+
+		var lini is now 62
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 63
+
+function created
+
+reading line 65: 
+
+reading line 66: $transparency[$INT] {
+
+Creating function
+
+		var lini is now 67
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 68
+
+function created
+
+reading line 70: 
+
+reading line 71: $spath[] {
+
+Creating function
+
+		var lini is now 72
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 73
+
+function created
+
+reading line 75: 
+
+reading line 76: $epath[] {
+
+Creating function
+
+		var lini is now 77
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 78
+
+function created
+
+reading line 80: 
+
+reading line 81: $strokecolor[$red,$green,$blue] {
+
+Creating function
+
+		var lini is now 82
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 83
+
+function created
+
+reading line 85: 
+
+reading line 86: $fillcolor[$red,$green,$blue] {
+
+Creating function
+
+		var lini is now 87
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 88
+
+function created
+
+reading line 90: 
+
+reading line 91: $color[$red,$green,$blue] {
+
+Creating function
+
+		var lini is now 92
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 93
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 94
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 95
+
+function created
+
+reading line 97: 
+
+reading line 98: $clear[$x1,$y1,$x2,$y2] {
+
+Creating function
+
+		var lini is now 99
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 100
+
+function created
+
+reading line 102: 
+
+reading line 103: $linewidth[$size] {
+
+Creating function
+
+		var lini is now 104
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 105
+
+function created
+
+reading line 107: 
+
+reading line 108: $sline[$fromX,$fromY,$toX,$toY] {
+
+Creating function
+
+		var lini is now 109
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 110
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 111
+
+function created
+
+reading line 113: 
+
+reading line 114: $circle[$X, $Y,$RAD] {
+
+Creating function
+
+		var lini is now 115
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 116
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 117
+
+function created
+
+reading line 119: 
+
+reading line 120: $arc[$X,$Y,$RAD,$START_ANGLE,$END_ANGLE] {
+
+Creating function
+
+		var lini is now 121
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 122
+
+function created
+
+reading line 124: 
+
+reading line 125: $bezCurve[$X1,$Y1,$X2,$Y2,$X3,$X4] {
+
+Creating function
+
+		var lini is now 126
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 127
+
+function created
+
+reading line 129: 
+
+reading line 130: $background[] {
+
+Creating function
+
+		var lini is now 131
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 132
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 133
+
+function created
+
+reading line 135: 
+
+reading line 136: $tri[$x1,$y1,$x2,$y2,$x3,$y3] {
+
+Creating function
+
+		var lini is now 137
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 138
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 139
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 140
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 141
+
+function created
+
+reading line 143: 
+
+reading line 144: $quad[$x1,$y1,$x2,$y2,$x3,$y3,$x4,$y4] {
+
+Creating function
+
+		var lini is now 145
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 146
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 147
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 148
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 149
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 150
+
+function created
+
+reading line 152: 
+
+reading line 153: $font[$size,$font] {
+
+Creating function
+
+		var lini is now 154
+
+<<LINE NOT RECG. ADDING>>
+
+		var lini is now 155
+
+function created
+
+reading line 157: 
+
+reading line 158: log('Init Complete')
+
+function name: log
+
+stripping args
+
+args stripped
+
+adding console statement
+
+COMPILE_TIME[0]: 1.108 S

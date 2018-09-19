@@ -1,0 +1,17 @@
+
+ 
+W 1000 
+H 1000 
+color 255 224 189 
+startpath 
+lwidth 10 
+move 500 450 
+line 120 400 
+draw  
+endpath 
+startpath 
+color 255 224 189 
+js c.arc(500,500,100,0,Math.PI*2) 
+js c.arc(500,400,100,0,Math.PI*2) 
+draw  
+endpath 

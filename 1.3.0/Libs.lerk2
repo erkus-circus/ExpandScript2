@@ -1,0 +1,11 @@
+#inc <output>
+
+
+var int i = 12
+
+var int r = i
+
+var int bb = 1
+
+
+^ i am a comment

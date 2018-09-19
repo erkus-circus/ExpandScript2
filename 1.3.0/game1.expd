@@ -1,0 +1,36 @@
+::
+:>Random Game
+:> v1.0
+:> Eric Diskin
+:> 2018
+::
+
+::
+multi line comment
+::
+
+^ single line comment
+
+#inc <canvas> ^ adds a module (this module in "./Lib/canvas.expd")
+
+
+::
+making functions:
+$fun_name[$arg1,$arg2,$arg3,...] { ^ args must start with $
+	inside function...
+} end function
+::
+
+str $playerName = 'Erkus' ^ make a string type variable
+^ vars must start with $
+
+
+width(1000) ^ function in <canvas>
+height(900) ^ function in <canvas>
+
+log($playerName) ^ console.logs $playerName
+
+int $px = 500
+int $py = 500
+
+log($px,$py)

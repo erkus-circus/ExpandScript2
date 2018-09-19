@@ -1,0 +1,159 @@
+::
+:> canvas module
+:> Eric Diskin
+:> 2018
+:> 2.1
+::
+
+log('HTML5 canvas module')
+log('Version: 1.0.0')
+log('Eric Diskin')
+log(2018)
+
+rawcss('body {background-color: black;}canvas {	display: block;	margin: auto;	border: 1px solid black;	background-color: white;}')r
+rawhtml('<canvas id="canv"></canvas>')
+rawjs('var canvas = document.getElementById("canv"), c = canvas.getContext("2d");')
+
+
+$move[$X,$Y] {
+	^ Move the canvas drawing point to X and Y
+	rawjs('c.moveTo($X,$Y);')
+}
+
+$line[$x,$y] {
+	^ makes a line to X, Y
+	rawjs('c.lineTo($x,$y);')
+}
+
+$box[$x1,$y1,$x2,$y2] {
+	^ creates a rect from x1,y1 to x2,y2
+	rawjs('c.rect($x1, $y1, $x2 - $x1, $y2 - y1);')
+}
+
+$width[$num] {
+	^ sets the width of the canvas
+	int $13__CANVAS_13_WIDTH__13 = $num
+	rawjs('canvas.width = $num;')
+}
+
+$height[$num] {
+	^ sets the height of the canvas
+	int $13__CANVAS_13_HEIGHT__13 = $num
+	rawjs('canvas.height = $num;')
+}
+
+$stroke[$HI] {
+	^ strokes on the canvas
+	rawjs('c.stroke();')
+}
+
+$fill[] {
+	^ fills on the canvas
+	rawjs('c.fill();')
+}
+
+$draw[] {
+	^ fills and strokes on canvas
+	fill()
+	stroke()
+}
+
+$trans[$parency] {
+	^ sets the Global Alpha of the context
+	rawjs('c.globalAlpha = $parency;')
+}
+
+$transparency[$INT] {
+	^ does the same as $trans
+	trans($INT)
+}
+
+$spath[] {
+	^ begins a path
+	rawjs('c.beginPath();')
+}
+
+$epath[] {
+	^ closes a path
+	rawjs('c.closePath();')
+}
+
+$strokecolor[$red,$green,$blue] {
+	^ sets the strokeStyle of c
+	rawjs('c.strokeStyle = "rgb($red,$green,$blue)";')
+}
+
+$fillcolor[$red,$green,$blue] {
+	^ sets the fillStyle of c
+	rawjs('c.fillStyle = "rgb($red,$green,$blue)";')
+}
+
+$color[$red,$green,$blue] {
+	^ sets both fillStyle and StrokeStyle.
+	fillcolor($red,$green,$blue)
+	strokecolor($red,$green,$blue)
+	return 'Hello Return World!'
+}
+
+$clear[$x1,$y1,$x2,$y2] {
+	^ clears a section on the canvas
+	rawjs('c.clearRect($x1,$y1,$x2 - $y1,$y2 - $y1);')
+}
+
+$linewidth[$size] {
+	^ sets the line witdth of c
+	rawjs('c.lineWidth = $size;')
+}
+
+$sline[$fromX,$fromY,$toX,$toY] {
+	^ makes a line from and to.
+	move($fromX,$fromY)
+	line($toX,$toY)
+}
+
+$circle[$X, $Y,$RAD] {
+	^ draws a circle on screeen
+	^ RAD is the RADIUS of the circle
+	rawjs('c.arc($X,$Y,$RAD,0,Math.PI*2)')
+}
+
+$arc[$X,$Y,$RAD,$START_ANGLE,$END_ANGLE] {
+	^ draws an arc on the canvas.
+	rawjs('c.arc($X,$Y,$RAD,$START_ANGLE,$END_ANGLE);')
+}
+
+$bezCurve[$X1,$Y1,$X2,$Y2,$X3,$X4] {
+	^ creates a bezier curve
+	rawjs('c.bezierCurveTo($X1,$Y1,$X2,$Y2,$X3,$X4);')
+}
+
+$background[] {
+	^ fills from 0,0 to width,height.
+	box(0,0,$13__CANVAS_13_WIDTH__13,$13__CANVAS_13_HEIGHT__13)
+	fill()
+}
+
+$tri[$x1,$y1,$x2,$y2,$x3,$y3] {
+	^ creates a triangle on the screen
+	move($x1,$y1)
+	line($x2,$y2)
+	line($x3,$y3)
+	line($x1,$y1)
+}
+
+$quad[$x1,$y1,$x2,$y2,$x3,$y3,$x4,$y4] {
+	^ creates a quadrilateral on the screen
+	move($x1,$y1)
+	line($x2,$y2)
+	line($x3,$y3)
+	line($x4,$y4)
+	line($x1,$y1)
+}
+
+$font[$size,$font] {
+	^ sets the font of c.
+	rawjs('c.font = "$sizepx $font";')
+}
+
+
+log('Init Complete')
